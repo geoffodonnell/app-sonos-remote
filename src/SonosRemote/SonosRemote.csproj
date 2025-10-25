@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Iot.Device.Bindings" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\ByteDev.Sonos.Upnp\ByteDev.Sonos.Upnp.csproj" />
+    <ProjectReference Include="..\..\lib\ByteDev.Sonos\ByteDev.Sonos.csproj" />
+    <ProjectReference Include="..\M5StackUnitScroll\M5StackUnitScroll.csproj" />
+    <ProjectReference Include="..\SonosRemote.Core\SonosRemote.Core.csproj" />
+  </ItemGroup>
+
+</Project>
